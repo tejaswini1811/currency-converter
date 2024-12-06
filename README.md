@@ -14,6 +14,7 @@
 * For example, on **Ubuntu**:
 
 ```bash
+sudo apt update
 sudo apt install openjdk-11-jdk
 ```
 **Step 2: Install Maven**
@@ -29,10 +30,10 @@ sudo apt install maven
 
 Create a folder structure as described below and place the following files in it:
 
-   * `**pom.xml:**` A configuration file that defines project dependencies like Spring Boot, Tomcat, etc.
-   * `**CurrencyConverterApplication.java:**` The main Java class that starts the Spring Boot application.
-   * `**CurrencyController.java:**` A controller that handles requests like showing the currency conversion form and processing the conversion.
-   * `**index.html**` and `**result.html:**` HTML templates for the user interface (input form and result page).
+   * `pom.xml:` A configuration file that defines project dependencies like Spring Boot, Tomcat, etc.
+   * `CurrencyConverterApplication.java:` The main Java class that starts the Spring Boot application.
+   * `CurrencyController.java:` A controller that handles requests like showing the currency conversion form and processing the conversion.
+   * `index.html` and `result.html:` HTML templates for the user interface (input form and result page).
 
 ### Step 4: Build the Application
 

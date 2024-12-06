@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -9,51 +8,61 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Currency Converter</name>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.5</version> <!-- Replace with your required version -->
+        <relativePath/> <!-- Lookup parent from the repository -->
+    </parent>
+
+    <properties>
+        <java.version>17</java.version> <!-- Update if using a different Java version -->
+    </properties>
 
     <dependencies>
-        <!-- Spring Web for creating web applications -->
+        <!-- Spring Boot Starter Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.0.5</version> <!-- Ensure this matches the parent version -->
         </dependency>
 
-        <!-- Tomcat Starter for WAR deployment -->
+        <!-- Spring Boot Starter Tomcat -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <version>3.0.5</version>
         </dependency>
 
-        <!-- Spring Boot Thymeleaf (Optional, for templating) -->
+        <!-- Spring Boot Starter Thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>3.0.5</version>
         </dependency>
 
-        <!-- JSON Parsing (Optional, for Currency API) -->
+        <!-- Jackson Databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
+            <version>2.15.0</version>
         </dependency>
-        
-        <!-- Spring Boot Testing Framework -->
+
+        <!-- Spring Boot Starter Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>3.0.5</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin to Build WAR (skip embedded server) -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
+                <version>3.0.5</version> <!-- Add version -->
             </plugin>
         </plugins>
     </build>
