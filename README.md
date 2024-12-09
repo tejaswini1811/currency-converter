@@ -9,13 +9,13 @@
 
 **Step 1: Install Java**
 
-* Install **Java 11** (or Java 8 or later) on your machine or EC2 instance.
+* Install **Java 17**  on your machine or EC2 instance.
 
 * For example, on **Ubuntu**:
 
 ```bash
 sudo apt update
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-17-jdk -y
 ```
 **Step 2: Install Maven**
 * Install **Maven** for managing the build and dependencies.
