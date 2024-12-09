@@ -16,7 +16,7 @@ public class CurrencyControllerTest {
 
     @Test
     public void testIndex() throws Exception {
-        mockMvc = MockMvcBuilders.standaloneSetup(new CurrencyConverterController()).build();
+        mockMvc = MockMvcBuilders.standaloneSetup(new CurrencyController()).build();
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"));
