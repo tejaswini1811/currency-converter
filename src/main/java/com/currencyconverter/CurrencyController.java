@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class CurrencyConverterController {
+public class CurrencyController {
 
     // Conversion rate for example: USD to EUR
     private static final double USD_TO_EUR_RATE = 0.85;
